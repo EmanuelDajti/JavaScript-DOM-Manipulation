@@ -83,8 +83,8 @@ lastItem.style.color = 'blue';
 var secondItem = document.querySelector('.list-group-item:nth-child(2)');
 secondItem.style.color = 'green';
 
-// QUERYSELECTORALL //
-
+// QUERYSELECTORAL //
+/*
 var title = document.querySelectorAll('.title');
 title[0].textContent = 'Hello';
 console.log(title);
@@ -96,3 +96,11 @@ for(var i = 0; i < odd.length; i++) {
     odd[i].style.backgroundColor = '#f4f4f4';
     even[i].style.backgroundColor = '#ccc';
 }
+*/
+// TRAVERSING THE DOM //
+
+var itemList = document.querySelector('#items');
+
+//parentnode
+
+console.log(itemList.parentNode);
