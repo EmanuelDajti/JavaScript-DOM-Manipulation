@@ -157,6 +157,7 @@ console.log(itemList.previousElementSibling);
 
 //Create a div
 
+/*
 var newDiv = document.createElement('div');
 
 //Add class
@@ -184,3 +185,12 @@ var h1 = document.querySelector('header h1');
 console.log(newDiv);
 
 container.insertBefore(newDiv, h1);
+
+*/
+
+var button = document.getElementById('button').addEventListener
+('click', buttonclick);
+
+function buttonclick() {
+    console.log('Button Clicked');
+}
