@@ -191,6 +191,14 @@ container.insertBefore(newDiv, h1);
 var button = document.getElementById('button').addEventListener
 ('click', buttonclick);
 
-function buttonclick() {
-    console.log('Button Clicked');
+function buttonclick(e) {
+    // console.log('Button Clicked');
+   //  document.getElementById('header-title').textContent = 'Changed';
+
+ //  console.log(e);
+
+  console.log(e.target);
+  console.log(e.target.id);
+  console.log(e.target.className);
+    
 }
