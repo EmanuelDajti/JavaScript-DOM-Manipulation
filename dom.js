@@ -61,7 +61,7 @@ li[1].style.backgroundColor = 'yellow';
 for(var i = 0; i < items.length; i++) {
     li[i].style.backgroundColor = '#f4f4f4';
 }
-*/
+
 
 // QUERYSELECTOR //
 
@@ -82,8 +82,9 @@ lastItem.style.color = 'blue';
 
 var secondItem = document.querySelector('.list-group-item:nth-child(2)');
 secondItem.style.color = 'green';
+*/
 
-// QUERYSELECTORAL //
+// QUERYSELECTORALL //
 /*
 var title = document.querySelectorAll('.title');
 title[0].textContent = 'Hello';
@@ -128,6 +129,7 @@ console.log(itemList.children);
 
 
 var itemList = document.querySelector('#items');
+
 //FirstChild
 console.log(itemList.firstChild);
 
@@ -186,19 +188,23 @@ console.log(newDiv);
 
 container.insertBefore(newDiv, h1);
 
-*/
+// EVENTS //
 
 var button = document.getElementById('button').addEventListener
 ('click', buttonclick);
 
 function buttonclick(e) {
-    // console.log('Button Clicked');
-   //  document.getElementById('header-title').textContent = 'Changed';
-
- //  console.log(e);
+     // console.log('Button Clicked');
+    //  document.getElementById('header-title').textContent = 'Changed';
+    //  console.log(e);
 
   console.log(e.target);
   console.log(e.target.id);
   console.log(e.target.className);
-    
+
+  var output = document.getElementById('output');
+  output.innerHTML = '<h3>'+e.target.id+'</h3>';
+  
 }
+
+*/
